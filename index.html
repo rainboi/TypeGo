@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Test</title>
+    <link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//cdn.web-fonts.ge/fonts/alk-sanet/css/alk-sanet.min.css">
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <div id="app">
+        <div id="header">
+            <p class="live-status">სიტყვა:<span id="Word">{{ words.split(' ').length }}</span></p>
+            <p class="live-status">სწორი სიტყვა:<span id="correctWord">{{ correctWords }}</span></p>
+            <p class="live-status">დრო:<span id="Time">{{ timer.time }}</span></p>
+        </div>
+        <div class="text-container">
+            <p class="text">
+                <span v-for="(char, index) in words" v-bind:id="index">{{char}}</span>
+            </p>
+        </div>
+        <div id="input-container">
+            <input type="text" id="main-input" @input='updateInputText' v-model="inputText" @keydown="compareKey">
+        </div>
+        <!-- <button v-on:click="restart">Restart</button> -->
+    </div>
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+
+</html>

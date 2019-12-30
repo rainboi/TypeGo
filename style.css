@@ -1,0 +1,88 @@
+body {
+    font-family: 'Abel', sans-serif;
+    background-color: #1A1A1D;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 600px;
+}
+
+#header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#input-container {
+    align-self: center;
+}
+
+#main-input {
+    font-family: "ALK Sanet", sans-serif;
+    font-size: 25px;
+    text-align: center;
+    color: #FFF;
+    width: 250px;
+    height: 30px;
+    background-color: #4E4E50;
+    border: none;
+    outline: none;
+}
+
+.live-status {
+    font-family: "ALK Sanet", sans-serif;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: #c3073f;
+    border-radius: 10px;
+}
+
+.text-container{
+    display: flex;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 250px;
+    border-radius: 30px;
+    background-color: #4E4E50;
+}
+
+.text{
+    text-align: center;
+    color: #FFF;
+    font-size: 25px;
+}
+
+.active-word {
+    background-color: #C3073F;
+}
+
+.correct-word {
+    background-color: green;
+}
+
+.incorret-word {
+    background-color: red;
+}
+
+.correct {
+    color: green;
+}
+
+.incorrect {
+    color: red;
+}
+
+.skipped {
+    color: yellow;
+}
